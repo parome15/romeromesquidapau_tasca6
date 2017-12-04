@@ -1,11 +1,10 @@
 function esprimer(numero){
-    i = 2;
-    while(i<numero){
-        if(numero%i == 0){
-            return false;
-            i++;
-        }else{
-            return true;
-        }
+    var n = numero - 1;
+
+    while(n>=2){
+        if(numero%n == 0){
+            return false; 
+        } 
+        n--;
     }
 }

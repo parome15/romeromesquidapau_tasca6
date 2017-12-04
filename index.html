@@ -5,18 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Tasca 6, numeros primos</title>
-        <script src="jsprimers.js"/>
+        <script src="jsprimers.js"></script>
     </head>
 
     <body>
         <h1>Nombres Primers</h1>
         <script type="text/javascript">
             var primo = prompt("Ingrese un numero:");
-
-            if(esprimer(primo)){
-                document.write(primo+ " es primer")
-            }else{
-                document.write(primo+ " es senar")
+            
+            for(var i=1; i<primo; i++){
+                if(esprimer(primo)){
+                    document.write(primo+ " es primer<br>")
+                }else{
+                    document.write(primo+ " es senar<br>")
+                }
             }
         </script>
     </body>
