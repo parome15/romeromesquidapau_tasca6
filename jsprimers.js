@@ -1,10 +1,12 @@
 function esprimer(numero){
-    var n = numero - 1;
+    var primo = true;
+    var i = 2;
 
-    while(n>=2){
-        if(numero%n == 0){
+    while(i<num){
+        if(num%n == 0){
             return false; 
         } 
         n--;
-    }
+        }
+        return primo;
 }
