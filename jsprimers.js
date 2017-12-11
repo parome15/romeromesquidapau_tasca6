@@ -1,12 +1,11 @@
-function esprimer(numero){
-    var primo = true;
-    var i = 2;
-
-    while(i<num){
-        if(num%n == 0){
-            return false; 
-        } 
-        n--;
+function esPrimo(num){
+    i=2
+    while (i<num){
+        if(num%i==0){
+            return false;
+            
         }
-        return primo;
+        i++;
+    }
+    return true;
 }

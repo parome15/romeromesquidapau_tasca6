@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Tasca 6, numeros primos</title>
-        <script src="jsprimers.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Carlos Estela">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <title>Números primos</title>
+    <script src="PJS.js"></script>
+</head>
+<body>
+    <div class="container">
+        <script>
+            num = prompt("De que numero quieres ver todos sus primos:"); 
+            num = parseInt(num);
 
-    <body>
-        <h1>Cálcul Nombres Primers</h1>
-        <script type="text/javascript">
-            var primo = prompt("Ingrese un numero:");
             
-            for(var i=1; i<primo; i++){
-                if(esprimer(primo)){
-                    document.write(primo+ " es primer<br>")
-                }else{
-                    document.write(primo+ " es senar<br>")
-                }
+            if(num>=1 && !isNaN(num)){
+                document.write("<h1> Los números primos </h1>");
+                document.write("<table class= 'table table-hover'>");
+                    for (var x =1; x<=num; x++){
+                        if(esPrimo(x)){
+                            document.write("<tr><td>"+ x +"</td></tr>");
+                        }
+                    }
+                    document.write("</table>");
             }
         </script>
-    </body>
-</html>
+
+        <button type="button"><a href="in.html"> Vuelve a introducir un valor</a> </button>
+    </div>
+</body>
